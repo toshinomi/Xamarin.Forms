@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WebView"
+             x:Class="WebView.MainPage">
+
+    <RelativeLayout Margin="5">
+        <Button
+            x:Name="buttonBack"
+            Text="＜"
+            WidthRequest="40"/>
+        <Button
+            x:Name="buttonForward"
+            Text="＞"
+            WidthRequest="40"
+            TranslationX="40"/>
+        <Button
+            x:Name="buttonReload"
+            Text="Update"
+            WidthRequest="80"
+            TranslationX="80"/>
+        <Entry
+            x:Name="editTextUri"
+            WidthRequest="240"
+            TranslationX="160"/>
+
+        <WebView 
+            x:Name="webWiew"
+            Source="https://www.bing.com/"
+            WidthRequest="400"
+            HeightRequest="600"
+            TranslationY="50"/>
+    </RelativeLayout>
+
+</ContentPage>
